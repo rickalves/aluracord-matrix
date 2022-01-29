@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router'
+import Alert from '@mui/material/Alert';
 
 import { Box, Button, Text, TextField, Image } from '@skynexui/components';
 import appConfig from '../config.json';
@@ -23,6 +24,7 @@ function Titulo(props) {
 export default function PaginaInicial() {
 
   const [username, setUsername] = useState('')
+  const [userError , setUserError] = useState("none")
   const router = useRouter()
 
   return (
@@ -56,7 +58,15 @@ export default function PaginaInicial() {
             as="form"
             onSubmit={function (e) {
               e.preventDefault()
-              router.push(`/chat?username=${username}`)
+              if(username){
+                if(username.length > 0 && username.trim().length > 0)
+                    router.push(`/chat?username=${username}`)
+                else{
+                  setUserError("flex")
+                }
+              }else{
+                setUserError("flex")
+              }
             }}
 
             styleSheet={{
@@ -73,10 +83,13 @@ export default function PaginaInicial() {
               value={username}  
               onChange={(e) => {
                 //Desafio proposto pelo Mario
+                
                 setUsername() //limpa o estado username
                 const valor = e.target.value //armazena o valor em uma constante
-                if(valor.length > 2) //testa se quantidade de caracteres do user é maior que 2
+                if(valor.length > 2 && valor.trim().length > 0){ //testa se quantidade de caracteres do user é maior que 2
                     setUsername(valor) //atribui o username
+                }else
+                    setUserError("none")
               }}
               fullWidth
               textFieldColors={{
@@ -88,6 +101,22 @@ export default function PaginaInicial() {
                 },
               }}
             />
+            <Alert 
+              severity="error"
+              sx={{
+                display: userError.toString(),
+                border: '1px solid',
+                color: 'red',
+                height: '30px',
+                padding: '0px 10px',
+                alignItems: 'center',
+                marginBottom: '5px',
+                opacity: '0.9',
+                fontWeight: '500',
+              }}
+            >
+              Entre com um username válido!
+            </Alert>
             <Button
               type='submit'
               label='Entrar'
