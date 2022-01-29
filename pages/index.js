@@ -22,7 +22,7 @@ function Titulo(props) {
 
 export default function PaginaInicial() {
 
-  const [username, setUsername] = useState('rickalves')
+  const [username, setUsername] = useState('')
   const router = useRouter()
 
   return (
@@ -64,7 +64,7 @@ export default function PaginaInicial() {
               width: { xs: '100%', sm: '50%' }, textAlign: 'center', marginBottom: '32px',
             }}
           >
-            <Titulo tag="h2">Bem vindo de volta Jedi!</Titulo>
+            <Titulo tag="h2">Bem vindo de volta!</Titulo>
             <Text variant="body3" 
               styleSheet={{ marginBottom: '32px', color: appConfig.theme.colors.neutrals[300] }}>
               {appConfig.name}
