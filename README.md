@@ -9,8 +9,10 @@
  [![Supabase](https://img.shields.io/badge/Supabase-20232A?style=for-the-badge&logo=supabase&logoColor=61DAFB)](https://supabase.com/)
   
 ## Status / Info
+[
 ![](https://img.shields.io/badge/npm-v.8.1.0-blue)
 ![](https://img.shields.io/github/stars/rickalves/aluracord-matrix.svg)
 ![](https://img.shields.io/github/commit-activity/w/rickalves/aluracord-matrix.svg)
 ![](https://img.shields.io/github/license/rickalves/aluracord-matrix.svg)
+](https://github.com/rickalves/aluracord-matrix/blob/main/README.md)
 
