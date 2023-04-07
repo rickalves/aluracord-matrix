@@ -8,7 +8,7 @@ Rápida descrição do objetivo de fazer esse projeto
 | :placard: Vitrine.Dev |     |
 | -------------  | --- |
 | :sparkles: Nome        | **Aluracord Starwars**
-| :label: Tecnologias | REACT, NEXTJS, VERCEL, SUPABASE
+| :label: Tecnologias | React, NextJS, Vercel, Supabase
 | :rocket: URL         | https://aluracord-matrix-navy.vercel.app/
 | :fire: Desafio     | https://www.alura.com.br/imersao-react
 
