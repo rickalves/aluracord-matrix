@@ -1,6 +1,20 @@
-# Aluracord Matrix
+# Aluracord Starwars
+
+Rápida descrição do objetivo de fazer esse projeto
+
 ## Projeto desenvolvido no evento de imersão React da Alura.
 `Esse projeto é um chat de troca de mensagens`
+
+| :placard: Vitrine.Dev |     |
+| -------------  | --- |
+| :sparkles: Nome        | **Aluracord Starwars**
+| :label: Tecnologias | REACT, NEXTJS, VERCEL, SUPABASE
+| :rocket: URL         | https://aluracord-matrix-navy.vercel.app/
+| :fire: Desafio     | https://www.alura.com.br/imersao-react
+
+<!-- Inserir imagem com a #vitrinedev ao final do link -->
+![](https://github.com/rickalves/aluracord-matrix/blob/main/alura-flix-project.jpg?text=imagem+lindona+do+meu+projeto#vitrinedev)
+
 
 ## Tecnologias Utilizadas
  [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://pt-br.reactjs.org/)
